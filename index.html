@@ -15,30 +15,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>Job Application Tracker</h1>
+    <h1>Job Application Tracker</h1>
 
-        <!-- Dashboard -->
-        <div class="dashboard">
-            <div class="card-box">
-            <p>Total Jobs</p> 
-            <h2 id="totalCount">0</h2>
-            </div>
-            <div class="card-box">
-            <p>Interview</p>
-            <h3 id="interviewCount">0</h3>
-            </div>
-            <div class="card-box">
-            <p>Rejected</p>
-            <h4 id="rejectedCount">0</h4>
-            </div>
-        </div>
-
-    <hr class="solid">
-
-     
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <div class="card-box">
+      <p>Total Jobs</p> 
+      <h2 >0</h2>
     </div>
+    <div class="card-box">
+      <p>Interview</p>
+      <h3 >0</h3>
+    </div>
+    <div class="card-box">
+      <p>Rejected</p>
+      <h4 >0</h4>
+    </div>
+  </div>
 
+  <hr class="solid">
 
-    <script src="script.js"></script>
+  <!-- Available Jobs -->
+  <div class="section-header">
+    <h2>Available Jobs</h2>
+    <span id="tabCount"></span>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" >All</div>
+    <div class="tab" >Interview</div>
+    <div class="tab" >Rejected</div>
+  </div>
+
+  <div class="jobs" id=""></div>
+</div>
+
+<script src="script.js"></script>
+    
 </body>
 </html>

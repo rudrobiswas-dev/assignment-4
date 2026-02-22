@@ -56,3 +56,39 @@ h1 {
   font-size: medium;
   font-weight: 500;
 }
+/* Tabs */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-header h2{
+  color: #002C5C;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.section-header span{
+  color: #64748B;
+  font-weight: 100;
+  font-size: 20px;
+}
+.tabs {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  width: 80px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+}

@@ -80,3 +80,9 @@ const jobsData = [
     status: "all"
 }
 ];
+
+let currentTab = "all";
+
+function updateDashboard() {
+  
+}
