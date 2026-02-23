@@ -195,3 +195,89 @@ button {
   margin-bottom: 10px;
 }
 
+.status {
+  margin: 10px 0;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-badge.all {
+  display: none; /* NOT APPLIED hidden initially */
+}
+
+.status-badge.interview {
+  background: #d1fae5;
+  color: #10b981;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+
+@media (max-width: 768px) {
+
+  .jobs {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .card-box {
+    text-align: center;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .tab {
+    flex: 1;
+  }
+
+  .job-card {
+    padding: 20px;
+  }
+
+  .job-card p {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+}

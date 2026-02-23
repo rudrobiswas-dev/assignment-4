@@ -129,6 +129,12 @@ function renderJobs() {
         <br/>
         <p>${job.location} . ${job.type} . ${job.salary}</p>
 
+        <div class="status">
+            <span class="status-badge ${job.status}">
+              ${job.status === "all" ? "" : job.status.toUpperCase()}
+            </span>
+        </div>
+
         <h6 class="card-description">${job.description}</h6>
 
         <div class="buttons">
