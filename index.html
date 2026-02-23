@@ -21,15 +21,15 @@
   <div class="dashboard">
     <div class="card-box">
       <p>Total Jobs</p> 
-      <h2 >0</h2>
+      <h2 id="totalCount">0</h2>
     </div>
     <div class="card-box">
       <p>Interview</p>
-      <h3 >0</h3>
+      <h3 id="interviewCount">0</h3>
     </div>
     <div class="card-box">
       <p>Rejected</p>
-      <h4 >0</h4>
+      <h4 id="rejectedCount">0</h4>
     </div>
   </div>
 
@@ -42,12 +42,12 @@
   </div>
 
   <div class="tabs">
-    <div class="tab active" >All</div>
-    <div class="tab" >Interview</div>
-    <div class="tab" >Rejected</div>
+    <div class="tab active" data-tab="all">All</div>
+    <div class="tab" data-tab="interview">Interview</div>
+    <div class="tab" data-tab="rejected">Rejected</div>
   </div>
 
-  <div class="jobs" id=""></div>
+  <div class="jobs" id="jobsContainer"></div>
 </div>
 
 <script src="script.js"></script>

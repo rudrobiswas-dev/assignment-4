@@ -1,8 +1,9 @@
- body {
+body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f7fa;
 }
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -17,12 +18,14 @@ h1 {
   color: #002C5C;
 }
 
+/* Dashboard */
 .dashboard {
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
+
 .card-box {
   flex: 1;
   min-width: 150px;
@@ -62,6 +65,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
 .section-header h2{
   color: #002C5C;
   font-size: 30px;
@@ -73,6 +77,7 @@ h1 {
   font-weight: 100;
   font-size: 20px;
 }
+
 .tabs {
   margin-top: 15px;
   display: flex;
@@ -92,3 +97,101 @@ h1 {
   background: #2563eb;
   color: white;
 }
+/* Job cards */
+.jobs {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1100px, 1fr));
+  gap: 15px;
+}
+
+.job-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.job-card h3 {
+  margin: 0;
+  color: #002C5C;
+}
+
+.job-card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 100;
+  color: #64748B;
+}
+.card-description{
+  color: black;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.interview {
+  background: transparent;
+  color: #10B981;
+  border: 1px solid #10B981;
+  border-radius: 5px;
+}
+
+.rejected {
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  border-radius: 5px;
+}
+
+.h3-and-icon{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.icon{
+  display: flex;
+  justify-items: center;
+  border: 1px solid #F1F2F4;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.delete {
+  background: transparent;
+  justify-content: center;
+  justify-items: center;
+  padding: 15px;
+  color: #64748B;
+  width: 15px;
+  height: 15px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.empty img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
